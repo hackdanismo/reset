@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/hackdanismo/reset/issues"
   },
-  "homepage": "https://github.com/hackdanismo/reset#readme"
+  "homepage": "https://github.com/hackdanismo/reset#readme",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3"
+  }
 }
