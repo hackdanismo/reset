@@ -57,4 +57,4 @@ $ npm run minify:css
 ```
 
 ## Licence
-The project is created by `Dan Jackson` and relased under the [MIT licence](https://github.com/hackdanismo/reset/blob/main/LICENSE).
+The project is created by `Dan Jackson` and released under the [MIT licence](https://github.com/hackdanismo/reset/blob/main/LICENSE).
