@@ -47,6 +47,10 @@ html {
 }
 
 body {
+    /* Helps to push the page footer to the bottom of the page. */
+    display: flex;
+    /* Helps to push the page footer to the bottom of the page. */
+    flex-direction: column;
     /* Remove the default margin. The body element usually has no default padding. */
     margin: 0;
     /*
@@ -60,6 +64,11 @@ body {
     min-height: 100vh;
     /* Default to using dvh unless not supported. Avoids content being hidden behind UI elements, such as a toolbar. */
     min-height: 100dvh;
+}
+
+main {
+    /* Avoids a floating footer element and helps to push the footer to the bottom of the page. */
+    flex: 1;
 }
 
 /* This is not strictly needed for modern browsers, but provides support for legacy browsers. */
