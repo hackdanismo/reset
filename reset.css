@@ -3,7 +3,7 @@
  * A lightweight, modern CSS reset for consistent styling across browsers.
  * 
  * Author: Dan Jackson (Hackdanismo).
- * Released under the MIT Licence: https://opensource.org/licences/MIT
+ * Released under the MIT Licence: https://opensource.org/licenses/MIT
  */
 
 html {
@@ -39,7 +39,7 @@ html {
 
 /* 
  * The universal selector applies styling to all elements.
- * Expicitly targets the ::before and ::after pseudo classes.
+ * Explicitly targets the ::before and ::after pseudo classes.
  */
 *, *::before, *::after {
     /* Inherit the property settings from the parent element. */
@@ -80,7 +80,7 @@ main, menu, nav, section {
 
 /* Form elements. */
 input, button, textarea, select {
-    /* Inherit the font settings, font-family, font-size, font-weight and line-height properties, from the parent element to avoid inconsitency with the browser-default form styling. */
+    /* Inherit the font settings, font-family, font-size, font-weight and line-height properties, from the parent element to avoid inconsistency with the browser-default form styling. */
     font: inherit;
     /* Inherit the color property from the parent element. */
     color: inherit;
