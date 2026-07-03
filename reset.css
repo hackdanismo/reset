@@ -81,7 +81,7 @@ main, menu, nav, section {
 }
 
 /* Form elements. */
-input, button, textarea, select {
+input, button, textarea, select, optgroup {
     /* Inherit the font settings, font-family, font-size, font-weight and line-height properties, from the parent element to avoid inconsistency with the browser-default form styling. */
     font: inherit;
     /* Inherit the color property from the parent element. */
