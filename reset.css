@@ -27,18 +27,6 @@ html {
     }
 }
 
-/* Check the browser accessibility settings. */
-@media (prefers-reduced-motion: reduce) {
-    html {
-        /* 
-         * Only use instant scrolling instead of animated scrolling.
-         * Applied if the accessibility settings are set to: reduce.
-         * e.g. when anchor links are clicked.
-         */
-        scroll-behavior: auto;
-    }
-}
-
 /* 
  * The universal selector applies styling to all elements.
  * Explicitly targets the ::before and ::after pseudo classes.
