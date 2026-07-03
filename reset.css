@@ -118,7 +118,7 @@ img, picture, video {
     max-width: 100%;
 }
 
-img, video, iframe {
+img, video {
     /*
      * This sets the browser to calculate the height automatically based on the element's width.
      * The height will be calculated based on the original aspect ratio.
@@ -127,4 +127,9 @@ img, video, iframe {
      * This allows the images and videos to be responsive.
      */
     height: auto;
+}
+
+iframe {
+    /* Remove border from the iFrame element. */
+    border: 0;
 }
