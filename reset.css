@@ -11,6 +11,8 @@ html {
     box-sizing: border-box;
     /* Reserve the space for a vertical scrollbar if it does not show to prevent layout shifts. */
     scrollbar-gutter: stable;
+    /* Avoids unexpected text resizing on mobile Safari. */
+    -webkit-text-size-adjust: 100%;
 }
 
 /* Check the browser accessibility settings. */
