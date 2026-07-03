@@ -103,7 +103,7 @@ table {
     border-collapse: collapse;
 }
 
-img, picture, video {
+img, picture, svg, video {
     /*
      * Sets images and media to be block elements. By default, these are usually inline-block.
      * Removes a small inline gap that can appear underneath the image assets.
@@ -118,7 +118,7 @@ img, picture, video {
     max-width: 100%;
 }
 
-img, video {
+img, video, svg {
     /*
      * This sets the browser to calculate the height automatically based on the element's width.
      * The height will be calculated based on the original aspect ratio.
