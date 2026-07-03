@@ -3,7 +3,7 @@
  * A lightweight, modern CSS reset for consistent styling across browsers.
  * 
  * Author: Dan Jackson (Hackdanismo).
- * Released under the MIT Licence: https://opensource.org/licences/MIT
+ * Released under the MIT Licence: https://opensource.org/licenses/MIT
  */
 
 html {
@@ -11,6 +11,8 @@ html {
     box-sizing: border-box;
     /* Reserve the space for a vertical scrollbar if it does not show to prevent layout shifts. */
     scrollbar-gutter: stable;
+    /* Avoids unexpected text resizing on mobile Safari. */
+    -webkit-text-size-adjust: 100%;
 }
 
 /* Check the browser accessibility settings. */
@@ -25,21 +27,9 @@ html {
     }
 }
 
-/* Check the browser accessibility settings. */
-@media (prefers-reduced-motion: reduce) {
-    html {
-        /* 
-         * Only use instant scrolling instead of animated scrolling.
-         * Applied if the accessibility settings are set to: reduce.
-         * e.g. when anchor links are clicked.
-         */
-        scroll-behavior: auto;
-    }
-}
-
 /* 
  * The universal selector applies styling to all elements.
- * Expicitly targets the ::before and ::after pseudo classes.
+ * Explicitly targets the ::before and ::after pseudo classes.
  */
 *, *::before, *::after {
     /* Inherit the property settings from the parent element. */
@@ -79,11 +69,21 @@ main, menu, nav, section {
 }
 
 /* Form elements. */
-input, button, textarea, select {
-    /* Inherit the font settings, font-family, font-size, font-weight and line-height properties, from the parent element to avoid inconsitency with the browser-default form styling. */
+input, button, textarea, select, optgroup {
+    /* Inherit the font settings, font-family, font-size, font-weight and line-height properties, from the parent element to avoid inconsistency with the browser-default form styling. */
     font: inherit;
     /* Inherit the color property from the parent element. */
     color: inherit;
+}
+
+button {
+    /* Set the cursor on the button element. */
+    cursor: pointer;
+}
+
+button:disabled {
+    /* Set the cursor on the button element when the button is disabled. */
+    cursor: default;
 }
 
 table {
@@ -91,7 +91,7 @@ table {
     border-collapse: collapse;
 }
 
-img, picture, video {
+img, picture, svg, video {
     /*
      * Sets images and media to be block elements. By default, these are usually inline-block.
      * Removes a small inline gap that can appear underneath the image assets.
@@ -106,7 +106,7 @@ img, picture, video {
     max-width: 100%;
 }
 
-img, video, iframe {
+img, video, svg {
     /*
      * This sets the browser to calculate the height automatically based on the element's width.
      * The height will be calculated based on the original aspect ratio.
@@ -115,4 +115,9 @@ img, video, iframe {
      * This allows the images and videos to be responsive.
      */
     height: auto;
+}
+
+iframe {
+    /* Remove border from the iFrame element. */
+    border: 0;
 }
