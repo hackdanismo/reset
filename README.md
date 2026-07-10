@@ -29,7 +29,7 @@ The `reset` will now be added to your webpage.
 ## Development
 
 ### Clone the repository
-To cloen the repository locally, use the following terminal commands:
+To clone the repository locally, use the following terminal commands:
 
 ```shell
 # SSH
