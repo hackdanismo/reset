@@ -15,7 +15,8 @@ Once downloaded, add the reset to the `<head>` section of your `HTML`.
 <!DOCTYPE html>
 <html lang="en">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is where the description for the webpage is placed.">
 
     <title>Webpage Title</title>
 
