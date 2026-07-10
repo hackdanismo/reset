@@ -20,7 +20,7 @@ Once downloaded, add the reset to the `<head>` section of your `HTML`.
 
     <title>Webpage Title</title>
 
-    <!-- Include the reset CSS stylsheet -->
+    <!-- Include the reset CSS stylesheet -->
     <link rel="stylesheet" href="reset.min.css">
 </html>
 ```
